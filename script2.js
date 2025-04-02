@@ -29,6 +29,11 @@ function checkAnswers() {
         successPopup.style.display = "block";
         errorPopup.style.display = "none"; // Aseguramos que el popup de error esté oculto
         nextTestButton.disabled = false;  // Habilitar el botón "Pasar a la prueba 3"
+
+        // Bloquear las respuestas correctas para que no puedan ser editadas
+        input1.disabled = true;
+        input2.disabled = true;
+        input3.disabled = true;
     } else {
         // Si alguna respuesta es incorrecta, muestra el popup de error
         errorPopup.style.display = "block";
