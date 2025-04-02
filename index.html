@@ -24,14 +24,20 @@
     </div>
 
     <div id="popup" class="popup success">
-        <p>¡Enhorabuena, pasas a la prueba 2!</p>
-        <p>Contraseña: <strong>TROGLOFAUNA</strong></p>
-        <button onclick="closePopup()">Cerrar</button>
-    </div>
+        <p>¡Enhorabuena, pasas a la Prueba 2!</p>
+        <p>Para ello necesitarás hacer uso de la siguiente base de datos: 
+            <strong>
+            <a id="download-link" href="https://github.com/Joaquin-MorenoC/gbmn_troglobios/raw/main/resources/DATOS_TROGLOBIOS.xlsx" target="_blank">
+                DATOS_TROGLOBIOS.xlsx
+            </a>
+        </strong>
+        <p>Descárgala para poder pasar a la Prueba 2.</p>
+        <button id="next-test-button" onclick="window.location.href='prueba2.html'" disabled>Pasar a la prueba 2</button>
+    </div>   
     
     <div id="error-popup" class="popup error">
         <p>¡Lástima! No todas las respuestas son correctas.</p>
-        <p>Necesitas acertar todas para pasar a la prueba 2. Vuelve a intentarlo con las que has fallado.</p>
+        <p>Necesitas acertar todas para pasar a la Prueba 2. Vuelve a intentarlo con las que has fallado.</p>
         <button onclick="closePopup()">Cerrar</button>
     </div>
     

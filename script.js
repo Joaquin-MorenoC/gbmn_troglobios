@@ -1,5 +1,4 @@
 function checkAnswers() {
-    // Respuestas correctas
     const answers = {
         input1: "OJOS",
         input2: "PIEL",
@@ -15,27 +14,34 @@ function checkAnswers() {
 
     let allCorrect = true;
 
-    // Comprobamos si todas las respuestas son correctas
     for (let inputId in answers) {
         let userInput = document.getElementById(inputId).value.toUpperCase();
         if (userInput === answers[inputId]) {
-            // Si la respuesta es correcta, bloqueamos el campo
             document.getElementById(inputId).disabled = true;
         } else {
-            // Si la respuesta es incorrecta, limpiamos el campo
             document.getElementById(inputId).value = "";
             document.getElementById(inputId).disabled = false;
             allCorrect = false;
         }
     }
 
-    // Si todas las respuestas son correctas, mostramos el popup de éxito
     if (allCorrect) {
         document.getElementById("popup").style.display = "block";
+        monitorDownload();
     } else {
-        // Si hay respuestas incorrectas, mostramos el popup de error
         document.getElementById("error-popup").style.display = "block";
     }
+}
+
+// Monitorear si el archivo ha sido descargado o abierto
+function monitorDownload() {
+    const downloadLink = document.getElementById("download-link");
+    const nextTestButton = document.getElementById("next-test-button");
+
+    downloadLink.addEventListener('click', function() {
+        // Habilitar el botón "Pasar a la prueba 2" una vez que el enlace haya sido clickeado
+        nextTestButton.disabled = false;
+    });
 }
 
 // Función para cerrar los popups

@@ -22,9 +22,9 @@ input[type="text"] {
     text-transform: uppercase;
 }
 
+/* Estilos comunes para los botones */
 button {
     padding: 10px 20px;
-    font-size: 1.2em;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -32,8 +32,21 @@ button {
     margin-top: 20px;
 }
 
-button:hover {
-    background-color: #45a049;
+/* Estilo del botón deshabilitado */
+button:disabled {
+    background-color: #e0e0e0; /* Color gris claro */
+    color: #b0b0b0; /* Texto gris */
+    cursor: not-allowed; /* Cambia el cursor para indicar que no se puede hacer clic */
+}
+
+/* Estilo del enlace */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Estilos comunes para los popups */
@@ -85,4 +98,13 @@ button:hover {
 input[disabled] {
     background-color: #e0e0e0; /* Fondo gris para inputs bloqueados */
     cursor: not-allowed; /* Cambia el cursor para indicar que no se puede editar */
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

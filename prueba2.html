@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba 2 - Identificación de Isópodos Ciegos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Título de la prueba -->
+    <h1>IDENTIFICACIÓN DE ISÓPODOS CIEGOS</h1>
+
+    <!-- Descripción -->
+    <p>Individuos: ¿¿ 3, 11, 14 y 18 ??</p>
+    <p>REALIZA UN ANÁLISIS DE COMPONENTES PRINCIPALES (PCA) EN R:</p>
+
+    <!-- Preguntas -->
+    <form id="pca-form">
+        <label for="q1">1. ¿QUÉ INDIVIDUOS SON DE LA MISMA ESPECIE?</label>
+        <input type="text" id="q1" placeholder="Respuesta..." required>
+        
+        <label for="q2">2. ¿CUÁL ES EL PORCENTAJE DE LA VARIANZA EXPLICADO POR EL MODELO?</label>
+        <input type="text" id="q2" placeholder="Respuesta..." required>
+        
+        <label for="q3">3. ¿QUÉ RASGOS SEPARAN LAS ESPECIES EN EL PC2?</label>
+        <input type="text" id="q3" placeholder="Respuesta..." required>
+        
+        <button type="button" onclick="checkAnswers()">Enviar respuestas</button>
+    </form>
+
+    <!-- Popup de éxito -->
+    <div id="popup" class="popup success" style="display: none;">
+        <p>¡Enhorabuena, pasas a la Prueba 3!</p>
+        <p>Para ello necesitarás lo siguiente: <strong>Categoría UICN: EN</strong></p>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
