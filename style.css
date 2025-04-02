@@ -94,17 +94,13 @@ a:hover {
     background-color: #e53935; /* Rojo más oscuro */
 }
 
+.popup button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
 
 input[disabled] {
     background-color: #e0e0e0; /* Fondo gris para inputs bloqueados */
     cursor: not-allowed; /* Cambia el cursor para indicar que no se puede editar */
 }
 
-a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}

@@ -3,36 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba 2 - Identificación de Isópodos Ciegos</title>
+    <title>PRUEBA 2 - Identificación de Isópodos Ciegos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Título de la prueba -->
     <h1>IDENTIFICACIÓN DE ISÓPODOS CIEGOS</h1>
 
-    <!-- Descripción -->
-    <p>Individuos: ¿¿ 3, 11, 14 y 18 ??</p>
-    <p>REALIZA UN ANÁLISIS DE COMPONENTES PRINCIPALES (PCA) EN R:</p>
+    <div class="prueba2">
+        <p>• ¿QUÉ INDIVIDUOS SON DE LA MISMA ESPECIE? <input type="text" id="input1" maxlength="20"></p>
+        <p>• ¿CUÁL ES EL PORCENTAJE DE LA VARIANZA EXPLICADO POR EL MODELO? <input type="text" id="input2" maxlength="20"></p>
+        <p>• ¿QUÉ RASGOS SEPARAN LAS ESPECIES EN EL PC2? <input type="text" id="input3" maxlength="20"></p>
 
-    <!-- Preguntas -->
-    <form id="pca-form">
-        <label for="q1">1. ¿QUÉ INDIVIDUOS SON DE LA MISMA ESPECIE?</label>
-        <input type="text" id="q1" placeholder="Respuesta..." required>
-        
-        <label for="q2">2. ¿CUÁL ES EL PORCENTAJE DE LA VARIANZA EXPLICADO POR EL MODELO?</label>
-        <input type="text" id="q2" placeholder="Respuesta..." required>
-        
-        <label for="q3">3. ¿QUÉ RASGOS SEPARAN LAS ESPECIES EN EL PC2?</label>
-        <input type="text" id="q3" placeholder="Respuesta..." required>
-        
-        <button type="button" onclick="checkAnswers()">Enviar respuestas</button>
-    </form>
+        <button onclick="checkAnswers()">Enviar respuestas</button>
+    </div>
 
     <!-- Popup de éxito -->
-    <div id="popup" class="popup success" style="display: none;">
+    <div id="popup" class="popup success">
         <p>¡Enhorabuena, pasas a la Prueba 3!</p>
-        <p>Para ello necesitarás lo siguiente: <strong>Categoría UICN: EN</strong></p>
+        <p>Para ello necesitarás lo siguiente: 
+            <strong>
+            Categoría UICN: EN
+            </strong>
+        </p>
+    </div>
+
+    <!-- Popup de error -->
+    <div id="error-popup" class="popup error">
+        <p>¡Lástima! No todas las respuestas son correctas.</p>
+        <p>Necesitas acertar todas para pasar a la Prueba 3. Vuelve a intentarlo con las que has fallado.</p>
+        <button onclick="closePopup()">Cerrar</button>
     </div>
 
     <script src="script2.js"></script>
