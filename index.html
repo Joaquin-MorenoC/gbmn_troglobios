@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRUEBA 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ADAPTACIONES DE LOS TROGLOBIOS</h1>
+
+    <div class="prueba1">
+        <p>• REGRESIÓN DE LOS <input type="text" id="input1" maxlength="10">: ciegos o con cierta sensibilización a la luz.</p>
+        <p>• DESPIGMENTACIÓN DE LA <input type="text" id="input2" maxlength="10">: organismos <input type="text" id="input3" maxlength="10">, deficiencia de melanina.</p>
+        <p>• REGRESIÓN DE LAS <input type="text" id="input4" maxlength="10"> O DESAPARICIÓN TOTAL.</p>
+        <p>• ALARGAMIENTO DEL <input type="text" id="input5" maxlength="10">.</p>
+        <p>• FISOGASTRIA: desarrollo del sistema <input type="text" id="input6" maxlength="10"> que permite ingerir gran cantidad de alimentos.</p>
+        <p>• HIPERESTESIA: aumento del sentido del <input type="text" id="input7" maxlength="10">.</p>
+        <p>• <input type="text" id="input8" maxlength="10"> DEL VOLUMEN DE LOS HUEVOS Y <input type="text" id="input9" maxlength="12"> DEL NÚMERO.</p>
+        <p>• VIDA ANFIBIA.</p>
+        <p>• LENTITUD DE CRECIMIENTO POR <input type="text" id="input10" maxlength="12"> DEL METABOLISMO.</p>
+
+        <button onclick="checkAnswers()">Enviar respuestas</button>
+    </div>
+
+    <div id="popup" class="popup success">
+        <p>¡Enhorabuena, pasas a la prueba 2!</p>
+        <p>Contraseña: <strong>TROGLOFAUNA</strong></p>
+        <button onclick="closePopup()">Cerrar</button>
+    </div>
+    
+    <div id="error-popup" class="popup error">
+        <p>¡Lástima! No todas las respuestas son correctas.</p>
+        <p>Necesitas acertar todas para pasar a la prueba 2. Vuelve a intentarlo con las que has fallado.</p>
+        <button onclick="closePopup()">Cerrar</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

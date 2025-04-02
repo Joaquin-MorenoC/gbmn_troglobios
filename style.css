@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.prueba1 p {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+input[type="text"] {
+    width: 150px;
+    padding: 5px;
+    margin: 0 5px;
+    text-transform: uppercase;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos comunes para los popups */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #4CAF50; /* Borde verde para el popup de éxito */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo específico para el popup de éxito */
+.popup.success {
+    border-color: #4CAF50;
+}
+
+/* Estilo específico para el popup de error */
+.popup.error {
+    border-color: #f44336;
+}
+
+.popup button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.popup button:hover {
+    background-color: #45a049;
+}
+
+.popup.error button {
+    background-color: #f44336; /* Rojo para el botón de error */
+}
+
+.popup.error button:hover {
+    background-color: #e53935; /* Rojo más oscuro */
+}
+
+
+input[disabled] {
+    background-color: #e0e0e0; /* Fondo gris para inputs bloqueados */
+    cursor: not-allowed; /* Cambia el cursor para indicar que no se puede editar */
+}
